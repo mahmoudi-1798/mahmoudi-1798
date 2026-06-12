@@ -11,7 +11,7 @@
 ## ⚡ Who am I?
 
 ```cpp
-class Mahmoudi {
+class Kourosh {
   std::string focus   = "Build fast. Ship faster. Never stop learning.";
   std::string stack[] = {"C/C++", "Linux", "Web", "AI", "Whatever it takes"};
   bool        sleeping = false; // rarely
@@ -22,7 +22,7 @@ class Mahmoudi {
 };
 ```
 
-I like building things — from low-level systems in C++ to web apps and small SaaS projects. I work across the stack, pick up whatever tool fits the job, and tend to learn best by just starting something. Most of my projects are solo, which means I wear a lot of hats and break a lot of things before they work.
+I like building things. From low-level systems in C++ to web apps and small SaaS projects. I work across the stack, pick up whatever tool fits the job, and tend to learn best by just starting something. Most of my projects are solo, which means I wear a lot of hats and break a lot of things before they work.
 
 ---
 
