@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d2137,50:0a4d4d,100:0d6e6e&height=200&section=header&text=mahmoudi-1798&fontSize=55&fontColor=ffffff&fontAlignY=38&desc=Builder.%20Hacker.%20Craftsman.&descAlignY=58&descSize=18&animation=fadeIn" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d2137,50:0a4d4d,100:0d6e6e&height=200&section=header&text=Kourosh%20Mahmoodi&fontSize=55&fontColor=ffffff&fontAlignY=38&desc=Builder.%20Hacker.%20Craftsman.&descAlignY=58&descSize=18&animation=fadeIn" width="100%"/>
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=22&pause=1000&color=2DD4BF&center=true&vCenter=true&width=700&lines=I+build+things+that+shouldn't+exist+yet.;Low-level+systems+%E2%86%92+high-impact+products.;From+C%2B%2B+to+SaaS+%E2%80%94+no+stack+is+off-limits.;Solopreneur+by+choice.+Engineer+by+obsession.)](https://git.io/typing-svg)
 
