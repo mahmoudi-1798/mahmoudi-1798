@@ -21,10 +21,10 @@ LOGIN = os.environ.get("GH_LOGIN", "mahmoudi-1798")
 TOKEN = os.environ.get("GH_TOKEN", "")
 
 # ---- look -----------------------------------------------------------------
-WAVE = ("#1a0000", "#5c0a0a", "#8b1a1a")  # front wave: dark -> blood red
-WAVE_BACK = ("#a32020", "#6e0f0f", "#3a0606")  # back wave: the same reds, flipped and lighter
-CARD_BG, CARD_EDGE = "#110606", "#3d1212"
-TITLE, TEXT, MUTED, HOT = "#ff5252", "#ecdcdc", "#9c7474", "#ff6b6b"
+WAVE = ("#1c0009", "#5c0019", "#a6002a")  # front wave: dark -> blood red
+WAVE_BACK = ("#c4113f", "#7d0022", "#3b000e")  # back wave: the same reds, flipped and lighter
+CARD_BG, CARD_EDGE = "#11050a", "#3d0d1c"
+TITLE, TEXT, MUTED, HOT = "#ff3d6a", "#ecdce1", "#9c7482", "#ff5c80"
 
 NAME = "KOUROSH MAHMOODI"
 TAGLINE = "full-stack engineer  //  co-founder @ dokkodo studio  //  C++ survivor"
@@ -134,8 +134,8 @@ def header() -> str:
         + wave_layer(w, h, 266, 22, True, "url(#b)", 1, 11, 2.0, -1)
         + wave_layer(w, h, 246, 24, True, "url(#g)", 1, 8)
         + f'<text x="{w / 2}" y="112" font-size="64" font-weight="700" fill="#ffffff" text-anchor="middle" letter-spacing="2">{NAME}</text>'
-        + f'<text x="{w / 2}" y="152" font-size="19" fill="#ffd0d0" opacity="0.8" text-anchor="middle">{escape(TAGLINE)}</text>'
-        + typing(TYPED, w / 2, 205, 26, "#ffb1b1")
+        + f'<text x="{w / 2}" y="152" font-size="19" fill="#ffd1dc" opacity="0.8" text-anchor="middle">{escape(TAGLINE)}</text>'
+        + typing(TYPED, w / 2, 205, 26, "#ffb3c6")
     )
     return svg(w, h, body)
 
@@ -146,7 +146,7 @@ def footer() -> str:
         f"<defs>{gradient('g', WAVE[::-1])}{gradient('b', WAVE_BACK[::-1])}</defs>"
         + wave_layer(w, h, 34, 22, False, "url(#b)", 1, 11, 2.0, -1)
         + wave_layer(w, h, 54, 24, False, "url(#g)", 1, 8)
-        + f'<text x="{w / 2}" y="112" font-size="18" fill="#ffd0d0" opacity="0.75" text-anchor="middle">/* EOF. go build something. */</text>'
+        + f'<text x="{w / 2}" y="112" font-size="18" fill="#ffd1dc" opacity="0.75" text-anchor="middle">/* EOF. go build something. */</text>'
     )
     return svg(w, h, body)
 
@@ -267,7 +267,7 @@ def card(w, h, title, inner) -> str:
         w,
         h,
         f'<rect x="0.5" y="0.5" width="{w - 1}" height="{h - 1}" rx="10" fill="{CARD_BG}" stroke="{CARD_EDGE}"/>'
-        f'<circle cx="22" cy="22" r="5" fill="#ff5f56"/><circle cx="40" cy="22" r="5" fill="#5a1d1d"/><circle cx="58" cy="22" r="5" fill="#5a1d1d"/>'
+        f'<circle cx="22" cy="22" r="5" fill="#ff5f56"/><circle cx="40" cy="22" r="5" fill="#5a1d2a"/><circle cx="58" cy="22" r="5" fill="#5a1d2a"/>'
         f'<text x="78" y="27" font-size="14" font-weight="700" fill="{TITLE}">{escape(title)}</text>'
         f"{inner}",
     )
