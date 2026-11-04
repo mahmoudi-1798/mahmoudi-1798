@@ -6,32 +6,11 @@
 
 ## `$ whoami`
 
-```yaml
-name:        Kourosh Mahmoodi
-role:        full-stack engineer, co-founder @ Dokkodo Studio
-first_love:  C++ (SDL2, raw pointers, a frankly unhealthy number of segfaults)
-day_job:     Next.js + Django / FastAPI + Postgres
-side_quests: bots, queues, workers, 3D in the browser, AI pipelines
-speaks:      [English, Persian]   # RTL done right, not mirrored as an afterthought
-editor:      vim                  # obviously
-bugs:        mostly in production, briefly
-```
-
 I build things that run. Not mockups, not pitch decks, not "an MVP coming soon". Software that takes real traffic and real users and keeps going when they do something weird.
 
 I started out writing games in C++ because I needed to know how a pixel ends up on a screen. That itch never went away. I want to understand the whole machine, from the socket up to the button, so these days I build the whole machine: backend, frontend, the queue in between, the server it lives on, and the 3am fix when it falls over. The 3am fix is also me.
 
 With my brother I run **Dokkodo Studio**. People come to us when they want a platform built properly the first time. A lot of it is bilingual Persian/English, which means I've fought every RTL bug you can think of and won.
-
-## `$ ls ~/building`
-
-Names are classified until launch. What I can say:
-
-- **A bot that sits in your meetings** so you don't have to pay attention. It transcribes everything and tells you what was actually decided. Event-driven, queues, workers, the whole thing.
-- **An AI video pipeline** that chops real footage into scenes, has vision models tag every clip, and assembles new videos from them. A footage library that grows itself.
-- **A memory app you talk to.** It keeps a living wiki of your life. Already running in production, used every day, by me first, obviously.
-- **Client platforms** at Dokkodo Studio: bilingual, role-based, built to survive real users.
-- **The old stuff**: Pacman, Space Invaders and a procedural world generator in C++/SDL2. Where it all started. Still public, still proud of them.
 
 ## `$ cat stack.txt`
 

@@ -21,7 +21,8 @@ LOGIN = os.environ.get("GH_LOGIN", "mahmoudi-1798")
 TOKEN = os.environ.get("GH_TOKEN", "")
 
 # ---- look -----------------------------------------------------------------
-WAVE = ("#1a0000", "#5c0a0a", "#8b1a1a")  # dark -> blood red
+WAVE = ("#1a0000", "#5c0a0a", "#8b1a1a")  # front wave: dark -> blood red
+WAVE_BACK = ("#a32020", "#6e0f0f", "#3a0606")  # back wave: the same reds, flipped and lighter
 CARD_BG, CARD_EDGE = "#110606", "#3d1212"
 TITLE, TEXT, MUTED, HOT = "#ff5252", "#ecdcdc", "#9c7474", "#ff6b6b"
 
@@ -74,8 +75,8 @@ def wave_path(w, h, base, amp, phase, top: bool) -> str:
     return f"M0,{h} L0,{pts[0][1]:.1f} {edge} L{w},{h} Z"
 
 
-def wave_layer(w, h, base, amp, top, fill, opacity, dur, phase0=0.0) -> str:
-    frames = [wave_path(w, h, base, amp, phase0 + p, top) for p in [k * 2 * math.pi / 12 for k in range(13)]]
+def wave_layer(w, h, base, amp, top, fill, opacity, dur, phase0=0.0, direction=1) -> str:
+    frames = [wave_path(w, h, base, amp, phase0 + direction * k * 2 * math.pi / 12, top) for k in range(13)]
     return (
         f'<path d="{frames[0]}" fill="{fill}" opacity="{opacity}">'
         f'<animate attributeName="d" dur="{dur}s" repeatCount="indefinite" values="{";".join(frames)}"/>'
@@ -129,8 +130,9 @@ def typing(lines, cx, y, size, color) -> str:
 def header() -> str:
     w, h = 1200, 320
     body = (
-        f"<defs>{gradient('g', WAVE)}</defs>"
-        + wave_layer(w, h, 252, 24, True, "url(#g)", 1, 8)
+        f"<defs>{gradient('g', WAVE)}{gradient('b', WAVE_BACK)}</defs>"
+        + wave_layer(w, h, 266, 22, True, "url(#b)", 1, 11, 2.0, -1)
+        + wave_layer(w, h, 246, 24, True, "url(#g)", 1, 8)
         + f'<text x="{w / 2}" y="112" font-size="64" font-weight="700" fill="#ffffff" text-anchor="middle" letter-spacing="2">{NAME}</text>'
         + f'<text x="{w / 2}" y="152" font-size="19" fill="#ffd0d0" opacity="0.8" text-anchor="middle">{escape(TAGLINE)}</text>'
         + typing(TYPED, w / 2, 205, 26, "#ffb1b1")
@@ -141,8 +143,9 @@ def header() -> str:
 def footer() -> str:
     w, h = 1200, 140
     body = (
-        f"<defs>{gradient('g', WAVE[::-1])}</defs>"
-        + wave_layer(w, h, 48, 24, False, "url(#g)", 1, 8)
+        f"<defs>{gradient('g', WAVE[::-1])}{gradient('b', WAVE_BACK[::-1])}</defs>"
+        + wave_layer(w, h, 34, 22, False, "url(#b)", 1, 11, 2.0, -1)
+        + wave_layer(w, h, 54, 24, False, "url(#g)", 1, 8)
         + f'<text x="{w / 2}" y="112" font-size="18" fill="#ffd0d0" opacity="0.75" text-anchor="middle">/* EOF. go build something. */</text>'
     )
     return svg(w, h, body)
