@@ -1,20 +1,39 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d2137,50:0a4d4d,100:0d6e6e&height=200&section=header&text=Kourosh%20Mahmoodi&fontSize=55&fontColor=ffffff&fontAlignY=38&desc=Builder.%20Hacker.%20Craftsman.&descAlignY=58&descSize=18&animation=fadeIn" width="100%"/>
-
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=22&pause=1000&color=2DD4BF&center=true&vCenter=true&width=700&lines=I+build+things+that+shouldn't+exist+yet.;Low-level+systems+%E2%86%92+high-impact+products.;From+C%2B%2B+to+SaaS+%E2%80%94+no+stack+is+off-limits.;Solopreneur+by+choice.+Engineer+by+obsession.)](https://git.io/typing-svg)
+<img src="./assets/header.svg" width="100%" alt="Kourosh Mahmoodi"/>
 
 </div>
 
----
+## `$ whoami`
 
-## ⚡ Who am I?
+```yaml
+name:        Kourosh Mahmoodi
+role:        full-stack engineer, co-founder @ Dokkodo Studio
+first_love:  C++ (SDL2, raw pointers, a frankly unhealthy number of segfaults)
+day_job:     Next.js + Django / FastAPI + Postgres
+side_quests: bots, queues, workers, 3D in the browser, AI pipelines
+speaks:      [English, Persian]   # RTL done right, not mirrored as an afterthought
+editor:      vim                  # obviously
+bugs:        mostly in production, briefly
+```
 
-I like building things. From low-level systems in C++ to web apps and small SaaS projects. I work across the stack, pick up whatever tool fits the job, and tend to learn best by just starting something. Most of my projects are solo, which means I wear a lot of hats and break a lot of things before they work.
+I build things that run. Not mockups, not pitch decks, not "an MVP coming soon". Software that takes real traffic and real users and keeps going when they do something weird.
 
----
+I started out writing games in C++ because I needed to know how a pixel ends up on a screen. That itch never went away. I want to understand the whole machine, from the socket up to the button, so these days I build the whole machine: backend, frontend, the queue in between, the server it lives on, and the 3am fix when it falls over. The 3am fix is also me.
 
-## 🛠️ Things I work with
+With my brother I run **Dokkodo Studio**. People come to us when they want a platform built properly the first time. A lot of it is bilingual Persian/English, which means I've fought every RTL bug you can think of and won.
+
+## `$ ls ~/building`
+
+Names are classified until launch. What I can say:
+
+- **A bot that sits in your meetings** so you don't have to pay attention. It transcribes everything and tells you what was actually decided. Event-driven, queues, workers, the whole thing.
+- **An AI video pipeline** that chops real footage into scenes, has vision models tag every clip, and assembles new videos from them. A footage library that grows itself.
+- **A memory app you talk to.** It keeps a living wiki of your life. Already running in production, used every day, by me first, obviously.
+- **Client platforms** at Dokkodo Studio: bilingual, role-based, built to survive real users.
+- **The old stuff**: Pacman, Space Invaders and a procedural world generator in C++/SDL2. Where it all started. Still public, still proud of them.
+
+## `$ cat stack.txt`
 
 <div align="center">
 
@@ -27,59 +46,41 @@ I like building things. From low-level systems in C++ to web apps and small SaaS
 ![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white)
 ![Qt](https://img.shields.io/badge/Qt-41CD52.svg?style=for-the-badge&logo=Qt&logoColor=white)
 ![CMake](https://img.shields.io/badge/CMake-064F8C?style=for-the-badge&logo=cmake&logoColor=white)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![Three.js](https://img.shields.io/badge/Three.js-000000?style=for-the-badge&logo=threedotjs&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
 ![Flask](https://img.shields.io/badge/Flask-000000.svg?style=for-the-badge&logo=Flask&logoColor=white)
 ![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
+![Celery](https://img.shields.io/badge/Celery-37814A?style=for-the-badge&logo=celery&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
+![RabbitMQ](https://img.shields.io/badge/RabbitMQ-FF6600?style=for-the-badge&logo=rabbitmq&logoColor=white)
 ![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
 ![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white)
-![Ollama](https://img.shields.io/badge/Ollama-000000?style=for-the-badge&logo=ollama&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
-![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)
 ![Vim](https://img.shields.io/badge/Vim-019733?style=for-the-badge&logo=vim&logoColor=white)
-![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
 
 </div>
 
----
-
-## 📊 Stats
+## `$ ./stats`
 
 <div align="center">
 
-<table>
-  <tr>
-    <td>
-      <img src="https://github-readme-stats.vercel.app/api?username=mahmoudi-1798&theme=tokyonight&hide_border=true&show_icons=true&include_all_commits=true&count_private=true" />
-    </td>
-    <td>
-      <img src="https://github-readme-streak-stats.herokuapp.com/?user=mahmoudi-1798&theme=tokyonight&hide_border=true&stroke=2DD4BF&ring=2DD4BF&fire=FF6B6B&currStreakLabel=2DD4BF" />
-    </td>
-  </tr>
-  <tr>
-    <td colspan="2" align="center">
-      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mahmoudi-1798&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&layout=compact&langs_count=10" />
-    </td>
-  </tr>
-</table>
+<img src="./assets/stats.svg" width="49%" alt="GitHub stats"/>
+<img src="./assets/streak.svg" width="49%" alt="Contribution streak"/>
+<img src="./assets/langs.svg" width="99%" alt="Top languages"/>
+
+<sub>Drawn by my own script every night. No third-party stats server, so it doesn't go down.</sub>
 
 </div>
 
----
-
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d6e6e,50:0a4d4d,100:0d2137&height=100&section=footer" width="100%"/>
-
-*"The best projects are the ones that didn't seem possible at the start."*
+<img src="./assets/footer.svg" width="100%"/>
 
 </div>
